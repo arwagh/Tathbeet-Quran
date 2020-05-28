@@ -76,7 +76,7 @@ p {
 	font-family: Poppins-Regular;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: #a59999;
 	margin: 0px;
 }
 
@@ -186,6 +186,7 @@ iframe {
   border-radius: 10px;
   overflow: hidden;
   padding: 62px 55px 90px 55px;
+  text-align: right;
 }
 
 
@@ -226,6 +227,7 @@ iframe {
   border-radius: 13px;
   padding: 10px 30px 9px 22px;
   margin-bottom: 20px;
+  text-align: right;
 }
 
 .rs1-wrap-input100 {
@@ -238,6 +240,7 @@ iframe {
   color: #393939;
   line-height: 1.5;
   text-transform: uppercase;
+  text-align: right;
 }
 
 .input100 {
@@ -470,7 +473,7 @@ textarea.input100 {
   font-size: 18px;
   color: #555555;
   line-height: 1.2;
-  padding-left: 0px ;
+  padding-left:92%;
   background-color: transparent;
 }
 
@@ -726,4 +729,27 @@ textarea.input100 {
   .wrap-contact100-form-radio {
     padding: 15px 0px 0 0px;
   }
+}
+
+
+.vertical-menu {
+  width: 200px;
+  position: relative;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #adadad;
+  color: white;
 }
