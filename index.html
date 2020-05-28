@@ -37,7 +37,7 @@
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+			<form class="contact100-form validate-form" method="POST" action="processing-plan.php">
 				<span class="contact100-form-title">
 					إنشاء خطة حفظ وتثبيت القرآن الكريم
 				</span>
@@ -128,6 +128,24 @@
 			        <input class="wrap-input100 validate-input bg1" type="number" min="1" max="7">
 				</div> 
 
+				<div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
+					<!--	<span class="label-input100">FULL NAME *</span>
+					<input class="input100" type="text" name="name" placeholder="Enter Your Name">
+					-->
+					<label>تكرار المراجعة للأجزاء المحفوظة</label>
+					<br>
+					
+					<label for="weekly">مرة كل أسبوع <input type="radio" id="reco" name="memorize-type" value="weekly"> </label><br>
+					<label for="two-weeks">مرة كل أسبوعين 	<input type="radio" id="memoriz" name="memorize-type" value="two-weeks"> </label><br>
+					<label for="three-weeks">مرة كل ثلاث أسابيع <input type="radio" id="memoriz" name="memorize-type" value="three-weeks"> </label><br>
+					<label for="monthly">مرة كل شهر <input type="radio" id="memoriz" name="memorize-type" value="monthly"> </label><br>
+
+				</div>
+
+				<div class="wrap-input100 validate-input bg1" data-validate = "Enter Your Email (e@a.x)">
+					<span class="label-input100">إذا كنت ترغب باستلام الخطة على البريد الإلكتروني، قم بكتاتبته أدناه</span>
+					<input class="input100" type="text" name="email" placeholder="البريد الإلكتروني">
+				</div>
 <!--
 				<div class="wrap-input100 validate-input bg0 rs1-alert-validate"
 					data-validate="Please Type Your Message">
