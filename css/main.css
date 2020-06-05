@@ -236,7 +236,8 @@ iframe {
 }
 
 .label-input100 {
-  font-family: Montserrat-SemiBold;
+  /*font-family: Montserrat-SemiBold;*/
+  font-family: "Adobe Arabic";
   font-size: 20px;
   color: #393939;
   line-height: 1.5;
@@ -248,7 +249,8 @@ iframe {
   display: block;
   width: 100%;
   background: transparent;
-  font-family: Montserrat-SemiBold;
+  /*font-family: Montserrat-SemiBold;*/
+  font-family: "Adobe Arabic";
   font-size: 18px;
   color: #555555;
   line-height: 1.2;
@@ -777,7 +779,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 html { overflow-y: scroll; }
 body { 
-  background: #eee url('https://i.imgur.com/eeQeRmk.png'); /* https://subtlepatterns.com/weave/ */
+  background: #f7f7f7;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 62.5%;
   line-height: 1;
@@ -1028,73 +1030,4 @@ i {
 		bottom: -25px;
 		left: -25px;
 	}
-}
-
-/*Header 2 Links*/
-
-@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two');
-
-/*
-body {
-    width: 100%;
-    height: 100%;
-}
-
-html {
-    width: 100%;
-    height: 100%;
-}
-*/
-/* ===== NAVIGATION ======*/
-.navbar {
-    border: 0;
-    z-index: 9999;
-    font-family: "Adobe Arabic";
-}
-.logo {
-    display: block;
-    height: auto;
-    width: 52px;
-    padding-top: 5px;
-    margin-right: 15px;
-}
-
-.navbar-brand>img {
-  height: 100%;
-  padding: 15px; /* firefox bug fix */
-  width: auto;
-}
-.navbar .nav > li > a {
-  line-height: 50px;
-}
-
-.navbar-header h1 {
-    letter-spacing: 1px;
-    color: black !important;
-    font-family: 'Lobster Two', cursive;
-}
-
-.navbar li a, .navbar {
-    color: black !important;
-    font-size: 18px;
-    transition: all 0.6s 0s;
-}
-
-.navbar-toggle {
-    background-color: transparent !important;
-    border: 0;
-}
-
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: red !important;
-}
-
-
-
-.rec-options{
-  display: block;
-}
-
-.mem-options{
-  display: none;
 }

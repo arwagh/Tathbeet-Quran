@@ -3256,7 +3256,6 @@ tbody.collapse.show {
 .navbar > .container,
 .navbar > .container-fluid {
   display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-align: center;
@@ -8183,3 +8182,4 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important;
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
