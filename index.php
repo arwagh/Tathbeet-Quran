@@ -100,13 +100,13 @@ font-family:'Adobe Arabic'; font-size:20px; margin-bottom:5px;">
 					-->
 					<span class="label-input100">نوع الخطة</span>
 					<br>
-					<div style="float: left; width: 50%;">
-                    <label class="input100" for="memorize" onclick="memorizeFunction()">حفظ 
-                    <input type="radio" id="memorize" name="plan-type" value="mem"> </label>
-                    </div>
                     <div style="float: left; width: 50%;">
                     <label class="input100" for="revision" onclick="rivisionFunction()">مراجعة 
                     <input type="radio" id="revision" name="plan-type" value="rev"> </label>
+                    </div>
+                    <div style="float: left; width: 50%;">
+                    <label class="input100" for="memorize" onclick="memorizeFunction()">حفظ 
+                    <input type="radio" id="memorize" name="plan-type" value="mem" checked="checked"> </label>
                     </div>
 				</div>
                 
@@ -116,7 +116,7 @@ font-family:'Adobe Arabic'; font-size:20px; margin-bottom:5px;">
 					<div style="float: right; width: 50%;">
     <div class="col-auto my-1">
           <label class="mr-sm-2" for="inlineFormCustomSelect">السورة</label>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" style="text-align:'right';">
         <option selected>اختر</option>
         <option value="1">البقرة</option>
         <option value="2">آل عمران</option>
@@ -140,7 +140,7 @@ font-family:'Adobe Arabic'; font-size:20px; margin-bottom:5px;">
                 </div>
 
                     <div class="wrap-input100 bg1 mem-option">
-                    <span class="label-input100">الجزئية يوميًّا (اختر إما بعدد الأوجه أو الآيات)ا</span>
+                    <bdi class="label-input100">الجزئية يوميًّا (اختر إما بعدد الأوجه أو الآيات)</bdi>
 					<br>
                     <div style="float: right; width: 50%;">
                     <div class="col-auto my-1">
