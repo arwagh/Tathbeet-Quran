@@ -46,14 +46,18 @@
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
         <script>
+            $( document ).ready(function() {
+                $('.mem-option').show();
+        $('.rev-options').hide();
+            });
 function memorizeFunction() {
-    $('.mem-options').show();
+    $('.mem-option').show();
     $('.rev-options').hide();
 
 }
 function rivisionFunction() {
     $('.rev-options').show();
-    $('.mem-options').hide();
+    $('.mem-option').hide();
 }
 </script>
 
@@ -94,182 +98,326 @@ font-family:'Adobe Arabic'; font-size:20px; margin-bottom:5px;">
 					-->
 					<span class="label-input100">نوع الخطة</span>
 					<br>
-					<div style="display: inline-block float:right;">
-					<label class="input100" for="memorize" onclick="memorizeFunction()">حفظ <input type="radio" id="memorize" name="plan-type" value="memorize"> </label>
-					<label class="input100" for="revision" onclick="rivisionFunction()">مراجعة <input type="radio" id="revision" name="plan-type" value="revision"> </label>
+					<div style="float: left; width: 50%;">
+                    <label class="input100" for="memorize" onclick="memorizeFunction()">حفظ 
+                    <input type="radio" id="memorize" name="plan-type" value="mem"> </label>
+                    </div>
+                    <div style="float: left; width: 50%;">
+                    <label class="input100" for="revision" onclick="rivisionFunction()">مراجعة 
+                    <input type="radio" id="revision" name="plan-type" value="rev"> </label>
+                    </div>
 				</div>
-				</div>
-				
-				<div class="wrap-input100 bg1">
-					<!--	<span class="label-input100">FULL NAME *</span>
-					<input class="input100" type="text" name="name" placeholder="Enter Your Name">
-					-->
-					<span class="label-input100">بداية من</span>
+                
+                <div class="wrap-input100 bg1 mem-option">
+                <span class="label-input100">البداية</span>
 					<br>
-					<div style="display: inline-block float:right;">
-					<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">السورة</span>
-						<select class="js-select2" name="service">
-							<option>آية</option>
-							<option>وجه</option>
-							<option>وجهين</option>
-							<option>ربع حزب</option>
-						</select>
-						<div class="dropDownSelect2"></div>
-					</div>
-					<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">الآية</span>
-						<select class="js-select2" name="service">
-							<option>آية</option>
-							<option>وجه</option>
-							<option>وجهين</option>
-							<option>ربع حزب</option>
-						</select>
-						<div class="dropDownSelect2"></div>
-					</div>
-				</div>
-				</div>
+					<div style="float: right; width: 50%;">
+    <div class="col-auto my-1">
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>اختر</option>
+        <option value="1">البقرة</option>
+        <option value="2">آل عمران</option>
+        <option value="3">النساء</option>
+      </select>
+      <label class="mr-sm-2" for="inlineFormCustomSelect">السورة</label>
+    </div>
+</div>
 
-				<div class="wrap-input100 bg1">
-					<!--	<span class="label-input100">FULL NAME *</span>
-					<input class="input100" type="text" name="name" placeholder="Enter Your Name">
-					-->
-					<span class="label-input100">الجزئية</span>
-					<br>
-					<div style="display: inline-block float:right;">
-					<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">الأوجه</span>
-						<select class="js-select2" name="service">
-							<option>آية</option>
-							<option>وجه</option>
-							<option>وجهين</option>
-							<option>ربع حزب</option>
-						</select>
-						<div class="dropDownSelect2"></div>
-					</div>
-					<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">الصفحات</span>
-						<select class="js-select2" name="service">
-							<option>آية</option>
-							<option>وجه</option>
-							<option>وجهين</option>
-							<option>ربع حزب</option>
-						</select>
-						<div class="dropDownSelect2"></div>
-					</div>
-				</div>
-				</div>
-				<!--Memoize divs-->
-				
-				<!--To make div sizes identical to the rest-->
-                <div class="wrap-input100 input100-select bg1 mem-options">
-
-                <div class="mem-options">
-
-                <div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">مقدار الحفظ يوميًّا</span>
-						<select class="js-select2" name="service">
-							<option>آية</option>
-							<option>وجه</option>
-							<option>وجهين</option>
-							<option>ربع حزب</option>
-						</select>
-						<div class="dropDownSelect2"></div>
-					</div>
-           
-<!-- -->
-<!--
-				<div class="w-full dis-none js-show-service">
-					<div class="wrap-contact100-form-radio">
-						<span class="label-input100">What type of products do you sell?</span>
-
-						<div class="contact100-form-radio m-t-15">
-							<input class="input-radio100" id="radio1" type="radio" name="type-product" value="physical"
-								checked="checked">
-							<label class="label-radio100" for="radio1">
-								Phycical Products
-							</label>
-						</div>
-
-						<div class="contact100-form-radio">
-							<input class="input-radio100" id="radio2" type="radio" name="type-product" value="digital">
-							<label class="label-radio100" for="radio2">
-								Digital Products
-							</label>
-						</div>
-
-						<div class="contact100-form-radio">
-							<input class="input-radio100" id="radio3" type="radio" name="type-product" value="service">
-							<label class="label-radio100" for="radio3">
-								Services Consulting
-							</label>
-						</div>
-					</div>
-
-					<div class="wrap-contact100-form-range">
-						<span class="label-input100">Budget *</span>
-
-						<div class="contact100-form-range-value">
-							$<span id="value-lower">610</span> - $<span id="value-upper">980</span>
-							<input type="text" name="from-value">
-							<input type="text" name="to-value">
-						</div>
-
-						<div class="contact100-form-range-bar">
-							<div id="filter-bar"></div>
-						</div>
-					</div>
-				</div>
-
--->
-
-
-				<div class="wrap-input100 bg1">
-					<!--	<span class="label-input100">FULL NAME *</span>
-					<input class="input100" type="text" name="name" placeholder="Enter Your Name">
-					-->
-					<span class="label-input100">عدد أيام الحفظ أسبوعيًّا</span>
-			        <input class="input100" class="wrap-input100 bg1" type="number" min="1" max="7">
-				</div> 
-
-				<div class="wrap-input100 bg1">
-					<!--	<span class="label-input100">FULL NAME *</span>
-					<input class="input100" type="text" name="name" placeholder="Enter Your Name">
-					-->
-					<span class="label-input100">مرات تكرار المراجعة للأجزاء المحفوظة</span>
-					
-					<label class="input100" for="weekly">مرة كل أسبوع <input type="radio" id="reco" name="memorize-type" value="weekly"> </label><br>
-					<label class="input100" for="two-weeks">مرة كل أسبوعين 	<input type="radio" id="memoriz" name="memorize-type" value="two-weeks"> </label><br>
-					<label class="input100" for="three-weeks">مرة كل ثلاث أسابيع <input type="radio" id="memoriz" name="memorize-type" value="three-weeks"> </label><br>
-					<label class="input100" for="monthly">مرة كل شهر <input type="radio" id="memoriz" name="memorize-type" value="monthly"> </label><br>
+                    <div style="float: right; width: 50%;">
+    <div class="col-auto my-1">
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>اختر</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <label class="mr-sm-2" for="inlineFormCustomSelect">الآية</label>
+    </div>
+                    </div>
 
                 </div>
-</div>
-</div>			
-<div class="wrap-input100 input100-select bg1 rev-options">
 
-<div class="rev-options">
+                    <div class="wrap-input100 bg1 mem-option">
+                    <span class="label-input100">الجزئية يوميًّا (اختر إما بعدد الأوجه أو الآيات)ا</span>
+					<br>
+                    <div style="float: right; width: 50%;">
+                    <div class="col-auto my-1">
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected>اختر</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">عدد الصفحات</label>
+                    </div>
+                    </div>
 
-<div class="wrap-input100 bg1">
-					<span class="label-input100">مقدار المراجعة يوميًّا</span>           		
-						<select class="js-select2" name="service">
-							<option>خمسة أوجه</option>
-							<option>نصف جزء</option>
-							<option>جزء كامل</option>
-							<option>جزءان</option>
-						</select>
-						<div class="dropDownSelect2"></div>
+                    <div style="float: right; width: 50%;">
+                    <div class="col-auto my-1">
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected>اختر</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">عدد الآيات</label>
+                    </div>
+                    </div>
+
+                    </div>
+
+
+                    <div class="wrap-input100 bg1 mem-option">
+                    <div style="float: right; width: 50%;">
+					<span class="label-input100">أيام الحفظ في الأسبوع</span>
+					<br>
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        السبت
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الأحد
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الإثنين
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الثلاثاء
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الأربعاء
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الخميس
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الجمعة
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div style="float: right; width: 50%;">
+					<span class="label-input100">أيام المراجعة في الأسبوع</span>
+					<br>
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        السبت
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الأحد
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الإثنين
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الثلاثاء
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الأربعاء
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الخميس
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: center; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الجمعة
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
 </div>
-</div>
-</div>
-                <div class="wrap-input100 validate-input bg1" data-validate="الرجاء اختيار التاريخ">
-					<!--	<span class="label-input100">FULL NAME *</span>
-					<input class="input100" type="text" name="name" placeholder="Enter Your Name">
-					-->
+
+                    </div>
+                    </div>
+
+                    <div class="wrap-input100 bg1 mem-option">
+					<span class="label-input100">أيام المراجعة في الأسبوع</span>
+					<br>
+                    <div style="float: right; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        السبت
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+
+                    <div style="float: right; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الأحد
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: right; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الإثنين
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: right; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الثلاثاء
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: right; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الأربعاء
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: right; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الخميس
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div style="float: right; width: 25%;">
+                    <div class="form-group">
+                    <div class="form-check">
+                    <label class="form-check-label" for="gridCheck" style="padding-right:5px;">
+                        الجمعة
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                    </div>
+                    </div>
+                    
+                    </div>
+                
+        <div class="wrap-input100 validate-input bg1" data-validate="الرجاء اختيار التاريخ">
 					<span class="label-input100">تاريخ البداية</span>
 			        <input class="input100" type="date">
 				</div> 
-
 
 				<div class="wrap-input100 validate-input bg1" data-validate = "Enter Your Email (e@a.x)">
 					<span class="label-input100">إذا كنت ترغب باستلام الخطة على البريد الإلكتروني، قم بكتابته أدناه</span>
