@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>نور | خدمة القرآن</title>
+		<title>نور | خدمة القرآن الكريم</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -16,239 +16,127 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 
-		<style>
-			body {
-    background: #f5f5f5
-}
-
-.rounded {
-    border-radius: 1rem
-}
-
-.nav-pills .nav-link {
-    color: #555
-}
-
-.nav-pills .nav-link.active {
-    color: white
-}
-
-input[type="radio"] {
-    margin-right: 5px
-}
-
-.bold {
-    font-weight: bold
-}
-@media (min-width: 768px){
-    .navbar-nav{
-        float:none;
-        margin: 0 auto;
-        display: table;
-        table-layout: fixed;
-    }
-}
-
-		</style>
-
 		<script>
-$(function() {
-$('[data-toggle="tooltip"]').tooltip()
-})
+
+		//$("#option1").click(function(){
+		//$("").hide();
+		//});
+		$(document).ready(function(){
+			$("#option1").click(function(){
+				$("#rec-div").hide();
+			});
+			$("#option2").click(function(){
+				$("#rec-div").show();
+  });
+
+
+  $("#option2").click(function(){
+				$("#memr-div").hide();
+			});
+			$("#option1").click(function(){
+				$("#memr-div").show();
+  });
+});
+
+
 		</script>
 	</head>
 	<body class="homepage">
+
 		<!-- Header -->
 		<div id="header">
 			<div class="container"> 
 				
 				<!-- Logo -->
 				<div id="logo">
+					<span style="font-family: 'El Messiri';color:white;
+					font-size: 50px;">نور</span>
+					<span style="font-family: 'El Messiri';">في سبيل خدمة القرآن الكريم</span>
 				</div>
 				
 				<!-- Nav -->
-				<nav class="navbar navbar-default" role="navigation">
-					<div class="navbar-header">
-					   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						  <span class="sr-only">Toggle navigation</span>
-						  <span class="icon-bar"></span>
-						  <span class="icon-bar"></span>
-						  <span class="icon-bar"></span>
-					   </button>
+				<nav id="nav">
+					<ul>
+						<li><a href="Moshawiqat.html">المشوّقات</a></li>
+						<li><a href="Motashabihat.html">المتشابهات</a></li>
+						<li class="active"><a href="Plan.html">إنشاء خطة جديدة</a></li>
+						<li><a href="Homepage.html">الرئيسية</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		
+
+
+<!-- Footer -->
+<div id="featured">
+	<div class="container">
+			<h1 style="text-align: center; font-family:
+		 'El Messiri'; font-size: 30px; padding-bottom: 10px;">إنشاء خطة القرآن</h1>
+			<hr style="height:2px; background-color:rgb(171, 145, 73, 0.3);"/>
+			<form style="text-align: center;">
+
+				  <div class="container h-100">
+					<div class="row align-items-center h-100">
+						<div class="col-6 mx-auto">
+							<div>
+								<div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
+									<label class="btn btn-secondary">
+									  <input type="radio" name="options" id="option1" autocomplete="off" style="width: 50px;"> مراجعة
+									</label>
+									<label class="btn btn-secondary">
+									  <input type="radio" name="options" id="option2" autocomplete="off" style="width: 50px;"> حفظ
+									</label>
+								  </div>
+							</div>
+							<div id="rec-div">
+								 
+							</div>
+							<div id="memr-div">
+								
+							</div>
+						</div>
 					</div>
-				 
-					<div class="collapse navbar-collapse  navbar-ex1-collapse">
-					   <ul class="nav navbar-nav">
-						  <li class="active"><a href="#">Link</a></li>
-						  <li><a href="#">Link</a></li>
-						  <li><a href="#">Link</a></li>
-					   </ul>
-				   </div>
-				 </nav>
+				</div>
+			</form>
+	</div>
+</div>
+
+
+<!-- Footer -->
+<div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="4u">
 				
 			</div>
-			
-		</div>
-
-		<h1 style="text-align: center; font-family:
-		 'El Messiri'; font-size: 30px; padding-top: 30px; padding-bottom: 10px;">إنشاء خطة القرآن</h1>
-		    <hr style="height:2px; background-color:rgb(171, 145, 73, 0.3);"/>
-			
-			<div class="container py-5">
-			  
-			  
-				<div class="row">
-				  <div class="col-lg-7 mx-auto">
-					<div class="bg-white rounded-lg shadow-sm p-5">
-					  <!-- Credit card form tabs -->
-					  <ul role="tablist" class="nav bg-light nav-pills rounded-pill nav-fill mb-3">
-						<li class="nav-item">
-						  <a data-toggle="pill" href="#nav-tab-card" class="nav-link active rounded-pill">
-											  <i class="fa fa-credit-card"></i>
-											  مراجعة
-										  </a>
-						</li>
-						<li class="nav-item">
-						  <a data-toggle="pill" href="#nav-tab-paypal" class="nav-link rounded-pill">
-											  <i class="fa fa-paypal"></i>
-											  حفظ
-										  </a>
-						</li>
-					  </ul>
-					  <!-- End -->
-			  
-			  
-					  <!-- Credit card form content -->
-					  <div class="tab-content">
-			  
-						<!-- credit card info-->
-						<div id="nav-tab-card" class="tab-pane fade show active">
-						  <p class="alert alert-success">Some text success or error</p>
-						  <form role="form">
-							<div class="form-group">
-							  <label for="username">Full name (on the card)</label>
-							  <input type="text" name="username" placeholder="Jason Doe" required class="form-control">
-							</div>
-							<div class="form-group">
-							  <label for="cardNumber">Card number</label>
-							  <div class="input-group">
-								<input type="text" name="cardNumber" placeholder="Your card number" class="form-control" required>
-								<div class="input-group-append">
-								  <span class="input-group-text text-muted">
-															  <i class="fa fa-cc-visa mx-1"></i>
-															  <i class="fa fa-cc-amex mx-1"></i>
-															  <i class="fa fa-cc-mastercard mx-1"></i>
-														  </span>
-								</div>
-							  </div>
-							</div>
-							<div class="row">
-							  <div class="col-sm-8">
-								<div class="form-group">
-								  <label><span class="hidden-xs">Expiration</span></label>
-								  <div class="input-group">
-									<input type="number" placeholder="MM" name="" class="form-control" required>
-									<input type="number" placeholder="YY" name="" class="form-control" required>
-								  </div>
-								</div>
-							  </div>
-							  <div class="col-sm-4">
-								<div class="form-group mb-4">
-								  <label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV
-															  <i class="fa fa-question-circle"></i>
-														  </label>
-								  <input type="text" required class="form-control">
-								</div>
-							  </div>
-			  
-			  
-			  
-							</div>
-							<button type="button" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirm  </button>
-						  </form>
-						</div>
-						<!-- End -->
-			  
-						<!-- Paypal info -->
-						<div id="nav-tab-paypal" class="tab-pane fade">
-						  <p>Paypal is easiest way to pay online</p>
-						  <p>
-							<button type="button" class="btn btn-primary rounded-pill"><i class="fa fa-paypal mr-2"></i> Log into my Paypal</button>
-						  </p>
-						  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						  </p>
-						</div>
-						<!-- End -->
-			  
-						<!-- bank transfer info -->
-						<div id="nav-tab-bank" class="tab-pane fade">
-						  <h6>Bank account details</h6>
-						  <dl>
-							<dt>Bank</dt>
-							<dd> THE WORLD BANK</dd>
-						  </dl>
-						  <dl>
-							<dt>Account number</dt>
-							<dd>7775877975</dd>
-						  </dl>
-						  <dl>
-							<dt>IBAN</dt>
-							<dd>CZ7775877975656</dd>
-						  </dl>
-						  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						  </p>
-						</div>
-						<!-- End -->
-					  </div>
-					  <!-- End -->
-			  
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  
-			
-			<!-- Footer -->
-		<div id="featured">
-			<div class="container">
-				<div class="row">
-	
-				</div>
+			<div class="4u">
+				
+			</div>
+			<div class="4u">
+				
 			</div>
 		</div>
+	</div>
+</div>
 
+<!-- Copyright -->
+<div id="copyright">
+	<div class="container">
+		Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+	</div>
+</div>
 
-	
-
-		<!-- Copyright -->
-		<div id="copyright">
-			<div class="container">
-				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
-			</div>
-		</div>
-		
-	</body>
+</body>
 </html>
